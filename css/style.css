@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: rgb(12, 12, 67) !important;  /* Sama untuk header dan footer */
+    color: white !important;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white !important;
+}
+
+footer {
+    background-color: rgb(12, 12, 67);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .container {
+    max-width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+footer .social-media a:hover {
+    color: #f39c12;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 10px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    footer .social-media a {
+        font-size: 12px;
+    }
+}
+
+
+h3, h1, h2 .text-center {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h3.text-center::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #003366;
+}
+
+.welcome-text {
+    font-family: 'Roboto', sans-serif;
+    color: navy;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+#typing-effect {
+    display: inline;
+    border-right: 3px solid navy;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+#home {
+    padding: 50px 0;
+}
+
+#about, #courses, #contact {
+    padding: 50px 0;
+}
+
+#about {
+    background: linear-gradient(135deg, #a3c4f3, #b8e0d2);
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+#about h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003366;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#about h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #003366;
+}
+
+#about p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .container-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about .container-lg img {
+    max-width: 50%;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 8px rgba(18, 6, 47, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+#home .container-lg {
+    text-align: center;
+}
+
+#home h2 {
+    text-align: center;
+}
+
+.card.course-card {
+    background: linear-gradient(30deg, #a3c4f3, #b8e0d2);
+    border-radius: 15px;
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: navy;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+    background-color: white;
+    border: 2px solid #0066cc;
+    color: #0066cc;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn.btn-primary:hover {
+    background-color: #f0f0f0;
+    color: #0066cc;
+    cursor: pointer;
+}
+
+#about h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #f7d7d7;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img-fluid {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+section {
+    transition: transform 1s ease-in-out;
+    transform: translateY(50px);
+}
+
+section.visible {
+    transform: translateY(0);
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(21, 71, 121) !important;
+}
